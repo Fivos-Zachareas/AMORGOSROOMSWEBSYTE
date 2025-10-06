@@ -1,0 +1,52 @@
+.content_wrapper {
+    background-color: rgba(195, 186, 186, 0.71);
+    padding: 20px 0;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.content_wrapper h2 {
+    font-size: 28px;
+    color: #444;
+    margin-top: 23px;
+}
+
+.content_wrapper p {
+    font-size: 18px;
+    color: #444;
+}
+
+.content_wrapper strong {
+    font-weight: bold;
+}
+
+#background_video {
+    position: absolute;
+    top: 100;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Κανόνες CSS για τις εικόνες σε κινητές οθόνες */
+@media screen and (max-width: 480px) {
+    #description img {
+        max-width: 90%; /* Μικρότερο πλάτος για μικρότερες οθόνες */
+    }
+}
+/* Προσαρμογή στην κινητή οθόνη */
+@media screen and (max-width: 767px) {
+    img#slideshow {
+        max-width: 100%;
+        float: none;
+    }
+}
+
+/* Προσαρμογή στο tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        text-align: center;
+    }
+}

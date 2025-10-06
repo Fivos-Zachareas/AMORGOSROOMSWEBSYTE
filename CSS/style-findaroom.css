@@ -1,0 +1,99 @@
+.search-bar-container {
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.location-search {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-bar input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 8px 20px;
+    border: none;
+    background-color: #525a52;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-bar button:hover {
+    background-color: #525a52;
+}
+
+.hotel-card {
+    margin-top: 20px;
+    position: relative;
+}
+
+.hotel-details {
+    display: flex;
+    flex-grow: 1;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hotel-info {
+    flex: 2;
+    margin-top: 20px;
+    overflow-wrap: anywhere;
+}
+
+.hotel-details h3 {
+    margin-top: 0;
+}
+
+.image-container {
+    width: 300px;
+    height: 170px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.photo-hyperlink {
+    position: relative;
+    top: 145px;
+}
+
+/* Κανόνες CSS για τις εικόνες σε κινητές οθόνες */
+@media screen and (max-width: 480px) {
+    #description img {
+        max-width: 90%; /* Μικρότερο πλάτος για μικρότερες οθόνες */
+    }
+}
+/* Προσαρμογή στην κινητή οθόνη */
+@media screen and (max-width: 767px) {
+    img#slideshow {
+        max-width: 100%;
+        float: none;
+    }
+}
+
+/* Προσαρμογή στο tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        text-align: center;
+    }
+}

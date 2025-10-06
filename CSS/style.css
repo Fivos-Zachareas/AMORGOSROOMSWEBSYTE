@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    color: black;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+
+}
+
+nav img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+nav a {
+    color: white; 
+    text-decoration: none; 
+    margin-right: 20px; 
+}
+
+.layout {
+    background-color: white;
+    margin-top: 80px;
+}
+
+/* Κανόνες CSS για τις εικόνες σε κινητές οθόνες */
+@media screen and (max-width: 480px) {
+    #description img {
+        max-width: 90%; /* Μικρότερο πλάτος για μικρότερες οθόνες */
+    }
+}
+/* Προσαρμογή στην κινητή οθόνη */
+@media screen and (max-width: 767px) {
+    img#slideshow {
+        max-width: 100%;
+        float: none;
+    }
+}
+
+/* Προσαρμογή στο tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        text-align: center;
+    }
+}

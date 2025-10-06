@@ -1,0 +1,27 @@
+.form-container {
+    border: 5px solid black;
+    padding: 5px; /* Padding inside the container */
+    text-align: center;
+    margin: 100px 100px 10px 100px;
+}
+
+/* Κανόνες CSS για τις εικόνες σε κινητές οθόνες */
+@media screen and (max-width: 480px) {
+    #description img {
+        max-width: 90%; /* Μικρότερο πλάτος για μικρότερες οθόνες */
+    }
+}
+/* Προσαρμογή στην κινητή οθόνη */
+@media screen and (max-width: 767px) {
+    img#slideshow {
+        max-width: 100%;
+        float: none;
+    }
+}
+
+/* Προσαρμογή στο tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        text-align: center;
+    }
+}
